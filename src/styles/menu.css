@@ -1,0 +1,161 @@
+/**
+ * https://goo.gl/zAWt68
+ * 의 메뉴 스타일 기반으로 커스터마이징.
+ * TODO: 구현된 화면에 맞게 불필요한 스타일 제거및 수정 필요.
+ */
+
+.navbar-brand-icon {
+  background-image: url(../img/brand.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu_state {
+  display: none;
+}
+
+nav:hover {
+  width: 250px;
+}
+
+nav:hover ul {
+  width: 100%;
+}
+
+nav:hover ul li div span {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  position: absolute;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #ffffff;
+  color: #8c8c8c;
+  width: 50px;
+  font-weight: lighter;
+  transition: all 0.15s ease-in-out;
+  float: left;
+}
+
+nav {
+  border-right: 1px solid #e2e2e2;
+}
+
+nav ul {
+  overflow: hidden;
+  display: block;
+  width: 50px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  border-bottom: 1px solid #e2e2e2;
+  position: relative;
+  cursor: pointer;
+  height: 50px;
+}
+
+nav ul.fix-menu li {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: none;
+}
+
+nav ul.fix-menu li div {
+  background: #eeeeee;
+}
+
+nav ul li div i {
+  color: #666666;
+}
+
+nav ul li.active div {
+  background: #ea0029;
+  color: #fff;
+}
+
+nav ul.fix-menu li.active div {
+  background: #666666;
+  color: #fff;
+}
+
+nav ul li.active div i {
+  color: #fff;
+}
+
+nav ul li div {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #9aa3a8;
+  height: 50px;
+  width: 100%;
+  transition: all 0.15s ease-in-out;
+  text-align: left;
+}
+
+nav ul li.logo-wrapper span{
+  font-size: 17px;
+  font-weight: 800;
+  color: #ea0029;
+}
+
+nav ul li.logo-wrapper div:hover {
+  color: #ea0029;
+  background: none;
+}
+
+nav ul.fix-menu li div {
+  color: #666666;
+}
+
+nav ul li div:hover {
+  background: #ea0029;
+  color: #fff;
+}
+
+nav ul.fix-menu li div:hover {
+  background: #666666;
+}
+
+nav ul li div:hover i {
+  color: #fff;
+}
+
+nav ul li div * {
+  height: 100%;
+  display: inline-block;
+}
+
+nav ul li div i {
+  /* 메뉴에 마우스오버했을 때 아이콘 박스 영역 ? */
+  text-align: center;
+  width: 50px;
+  /* margin-left: 16px; */
+  font-size: 16px !important;
+  z-index: 999999;
+}
+
+nav ul li div i.fa {
+  line-height: 50px;
+}
+
+nav ul li div span {
+  padding-left: 10px;
+  opacity: 0;
+  line-height: 50px;
+  transition: opacity 0.1s ease-in-out;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.frame-body {
+  padding-left: 60px;
+}

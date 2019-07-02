@@ -1,0 +1,763 @@
+img.labelIcon {
+	position: relative;
+	top: 2px;
+	margin-right: 3px;
+}
+
+span.label-icon {
+	display: inline-block;
+	position: relative;
+	width: 14px;
+	height: 14px;
+	top: 2px;
+	margin-right: 3px;
+}
+
+span.row-icon {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+.bullet-icon {
+	background-image: url(../img/icons/icon-dot.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 9px;
+}
+
+.icon-move-left {
+	background-image: url(../img/icons/move/icon-move-left.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-left-on {
+	background-image: url(../img/icons/move/icon-move-left-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-left-first {
+	background-image: url(../img/icons/move/icon-move-left-first.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-left-first-on {
+	background-image: url(../img/icons/move/icon-move-left-first-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-right {
+	background-image: url(../img/icons/move/icon-move-right.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-right-on {
+	background-image: url(../img/icons/move/icon-move-right-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-right-first {
+	background-image: url(../img/icons/move/icon-move-right-first.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-right-first-on {
+	background-image: url(../img/icons/move/icon-move-right-first-on.png);
+	background-position: center;
+}
+
+.icon-move-bottom {
+	background-image: url(../img/icons/move/icon-move-bottom.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-bottom-on {
+	background-image: url(../img/icons/move/icon-move-bottom-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-down {
+	background-image: url(../img/icons/move/icon-move-down.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-down-on {
+	background-image: url(../img/icons/move/icon-move-down-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-top {
+	background-image: url(../img/icons/move/icon-move-top.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-top-on {
+	background-image: url(../img/icons/move/icon-move-top-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-up {
+	background-image: url(../img/icons/move/icon-move-up.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-move-up-on {
+	background-image: url(../img/icons/move/icon-move-up-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-player-refresh {
+	background-image: url(../img/icons/icon-player-refresh.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-player-stop {
+	background-image: url(../img/icons/icon-player-stop.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-player-pause {
+	background-image: url(../img/icons/icon-player-pause.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-player-play {
+	background-image: url(../img/icons/icon-player-play.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-excel {
+	background-image: url(../img/icons/icon-excel.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-bar-chart {
+	background-image: url(../img/icon/chart_bar.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-trash {
+	background-image: url(../img/icons/icon-trash.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-info {
+	background-image: url(../img/icons/icon-info.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-tool-history {
+	background-image: url(../img/icons/icon-chart-up.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-tool-maximize {
+	background-image: url(../img/icons/icon-tool-maximize.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-tool-minimize {
+	background-image: url(../img/icons/icon-tool-minimize.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-tool-rsc {
+	background-image: url(../img/icons/icon-rsc-btn.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-tool-set {
+	background-image: url(../img/icons/icon-tool-set.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-set {
+	background-image: url(../img/icons/icon-tool-set.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-tree-close {
+	background-image: url(../img/icons/icon-tree-close.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-tree-open {
+	background-image: url(../img/icons/icon-tree-open.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-tree-mini-close {
+	background-image: url(../img/icons/icon-tree-mini-close.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-tree-mini-open {
+	background-image: url(../img/icons/icon-tree-mini-open.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-auth-not {
+	background-image: url(../img/icons/icon-auth-not.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-auth-ok {
+	background-image: url(../img/icons/icon-auth-ok.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-auth-stop {
+	background-image: url(../img/icons/icon-auth-stop.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-auth-unused {
+	background-image: url(../img/icons/icon-auth-unused.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-search {
+	background-image: url(../img/icons/icon-search-white.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-detail {
+	background-image: url(../img/icons/icon-search.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-detail:hover {
+	background-image: url(../img/icons/icon-search-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-abnormal {
+	background-image: url(../img/icons/icon-state-abnormal.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-normal {
+	background-image: url(../img/icons/icon-state-normal.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-notcollect {
+	background-image: url(../img/icons/icon-state-notcollect.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-off {
+	background-image: url(../img/icons/icon-state-off.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-on {
+	background-image: url(../img/icons/icon-state-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-up {
+	background-image: url(../img/icons/icon-state-round-up.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-down {
+	background-image: url(../img/icons/icon-state-round-down.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-shut {
+	background-image: url(../img/icons/icon-state-round-shut.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-none {
+	background-image: url(../img/icons/icon-state-round-none.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-round-up {
+	background-image: url(../img/icons/icon-state-round-up.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-round-down {
+	background-image: url(../img/icons/icon-state-round-down.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-round-shut {
+	background-image: url(../img/icons/icon-state-round-shut.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-state-round-none {
+	background-image: url(../img/icons/icon-state-round-none.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-oper-start {
+	background-image: url(../img/icons/icon-oper-start.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-oper-stop {
+	background-image: url(../img/icons/icon-oper-stop.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-check-on {
+	background-image: url(../img/icons/icon-check-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-check-off {
+	background-image: url(../img/icons/icon-check-off.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-check-fail {
+	background-image: url(../img/icons/icon-check-fail.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-time-on {
+	background-image: url(../img/icons/icon-time-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-time-off {
+	background-image: url(../img/icons/icon-time-off.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-stock-up {
+	background-image: url(../img/icons/icon-up-little.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-stock-up2 {
+	background-image: url(../img/icons/icon-up-more.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-stock-down {
+	background-image: url(../img/icons/icon-down-little.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-stock-down2 {
+	background-image: url(../img/icons/icon-down-more.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-acl-deny {
+	background-image: url(../img/icons/icon-acl-deny.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-acl-permit {
+	background-image: url(../img/icons/icon-acl-permit.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-acl-remark {
+	background-image: url(../img/icons/icon-acl-remark.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-min-netdevice {
+	background-image: url(../img/icons/icon-min-netdevice.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-min-netdevice-on {
+	background-image: url(../img/icons/icon-min-netdevice-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-min-netinterface {
+	background-image: url(../img/icons/icon-min-netinterface.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-min-netinterface-on {
+	background-image: url(../img/icons/icon-min-netinterface-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-min-server {
+	background-image: url(../img/icons/icon-min-server.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-min-server-on {
+	background-image: url(../img/icons/icon-min-server-on.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-rsc-group {
+	background-image: url(../img/icons/icon-rsc-group.png) !important;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-rsc-node {
+	background-image: url(../img/icons/icon-rsc-node.png) !important;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-work-success {
+	background-image: url(../img/icons/icon-work-success.png) !important;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-work-fail {
+	background-image: url(../img/icons/icon-work-fail.png) !important;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-work-execute {
+	background-image: url(../img/icons/icon-work-execute.png) !important;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-work-cancel {
+	background-image: url(../img/icons/icon-work-cancel.png) !important;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-favorite {
+	background-image: url(../img/icons/icon-star-on.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-favorite-none {
+	background-image: url(../img/icons/icon-star-off.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-compare {
+	background-image: url(../img/icons/icon-compare.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-copy {
+	background-image: url(../img/icons/icon-copy.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-upload {
+	background-image: url(../img/icons/icon-upload.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-download {
+	background-image: url(../img/icons/icon-download.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-comply-nice {
+	background-image: url(../img/icons/icon-comply-nice.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-comply-good {
+	background-image: url(../img/icons/icon-comply-good.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-comply-bad {
+	background-image: url(../img/icons/icon-comply-bad.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-comply-worst {
+	background-image: url(../img/icons/icon-comply-worst.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-wizard-next {
+	background-image: url(../img/icons/icon-wizard-next.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.x-btn-primary-large .icon-wizard-next {
+	background-image: url(../img/icons/icon-wizard-next-on.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-wizard-prev {
+	background-image: url(../img/icons/icon-wizard-prev.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.x-btn-primary-large .icon-wizard-prev {
+	background-image: url(../img/icons/icon-wizard-prev-on.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-collection {
+	background-image: url(../img/icons/icon-collection.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-grid-cancel {
+	background-image: url(../img/icons/icon-grid-cancel.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-sort {
+	background-image: url(../img/icons/icon-sort.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-minus-circle {
+	background-image: url(../img/icons/icon-minus-circle.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-minus-circle:hover {
+	background-image: url(../img/icons/icon-minus-circle-on.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-ticket-issue {
+	background-image: url(../img/icon/book_edit.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-time-check-off {
+	background-image: url(../img/icons/icon-time-check-off.png);
+	background-position: 30% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.icon-time-check-off .x-column-header-text {
+	padding: 0px 0px 0px 40%;
+}
+
+.icon-time-check-on {
+	cursor: pointer;
+}
+
+.icon-time-check-on .x-column-header-over {
+	background-image: url(../img/icons/icon-time-check-on.png) !important;
+	background-position: 30% 50%;
+	background-repeat: no-repeat;
+}
+
+.icon-week-check-off {
+	background-image: url(../img/icons/icon-time-check-off.png);
+	background-position: 25% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.icon-week-check-off:hover {
+	background-image: url(../img/icons/icon-time-check-on.png);
+}
+
+.icon-date-check-off {
+	background-image: url(../img/icons/icon-time-check-off.png);
+	background-position: 10% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.icon-date-check-off:hover {
+	background-image: url(../img/icons/icon-time-check-on.png);
+}
+
+/** [DMS] Pc control-management icon From v10 resource **/
+.icon-remote-connect {
+	background-image: url(../img/icons/icon-remote-connect.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-pc-turn-on {
+	background-image: url(../img/icons/icon-pc-turn-on.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-pc-turn-off {
+	background-image: url(../img/icons/icon-pc-turn-off.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-pc-restart {
+	background-image: url(../img/icons/icon-pc-restart.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/** [DMS] Software asset-management icon From v10 resource **/
+.icon-software {
+	background-image: url(../img/icons/icon-software.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/** [DMS] Hardware asset-management hardware type icon **/
+.icon-hardware-cdrom {
+	background-image: url(../img/manageobject/16px/CDROM.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-hardware-cpu {
+	background-image: url(../img/manageobject/16px/CPU.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-hardware-disk {
+	background-image: url(../img/manageobject/16px/DISK.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-hardware-keyboard {
+	background-image: url(../img/manageobject/16px/KEYBOARD.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-hardware-memory {
+	background-image: url(../img/manageobject/16px/MEMORY.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-hardware-mouse {
+	background-image: url(../img/manageobject/16px/MOUSE.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-hardware-network {
+	background-image: url(../img/manageobject/16px/NETWORK.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-hardware-sound {
+	background-image: url(../img/manageobject/16px/SOUND.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-hardware-vga {
+	background-image: url(../img/manageobject/16px/VGA.png) !important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-no-image {
+	background-image: url(../img/no_image.png) !important;
+}
+

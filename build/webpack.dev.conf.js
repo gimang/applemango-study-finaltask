@@ -7,12 +7,14 @@ const path = require('path')
 const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const WebpackBrowserPlugin = require('webpack-browser-plugin') // NOTE: add
+// const WebpackBrowserPlugin = require('webpack-browser-plugin') // NOTE: add
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
+
+const { VueLoaderPlugin } = require('vue-loader');
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -66,7 +68,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
-    new WebpackBrowserPlugin(), // NOTE: add
+    // new WebpackBrowserPlugin(), // NOTE: add
+    new VueLoaderPlugin()
   ]
 })
 

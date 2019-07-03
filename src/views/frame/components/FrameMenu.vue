@@ -14,13 +14,13 @@
         <span>Sample 1</span>
       </div>
     </li>
-	<li class="unread active">
+    <li class="unread active">
       <div>
         <i class="fa fa-laptop"></i>
         <span>Sample 2</span>
       </div>
     </li>
-	<li class="unread">
+  <li class="unread">
       <div>
         <i class="fa fa-laptop"></i>
         <span>Sample 3</span>
@@ -34,7 +34,7 @@
         <span>Sample 3</span>
       </div>
     </li>
-	<li class="unread">
+  <li class="unread">
       <div>
         <i class="fa fa-laptop"></i>
         <span>Sample 3</span>

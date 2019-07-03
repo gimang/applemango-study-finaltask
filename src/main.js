@@ -23,10 +23,11 @@ Vue.use(ElementUI, {
   locale,
 });
 
-Vue.config.productionTip = false; 
+Vue.config.productionTip = false;
 
-new Vue({
+const app = new Vue({
   el: '#app',
   components: { App },
   template: '<App/>',
 });
+app();

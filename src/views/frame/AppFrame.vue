@@ -1,9 +1,9 @@
 <template>
   <el-container class="portal-wrapper">
-    <w-frame-menu/>
+    <w-frame-menu />
     <div class="portal-main-wrapper">
-      <w-frame-header/>
-      <w-frame-section/>
+      <w-frame-header class="frame-header" />
+      <w-frame-section class="frame-section" />
     </div>
   </el-container>
 </template>
@@ -23,6 +23,17 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.portal-main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
+.frame-header {
+  height: 50px;
+}
+
+.frame-section {
+  flex: 1;
+}
 </style>

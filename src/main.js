@@ -17,6 +17,8 @@ import './styles/menu.css';
 // components
 import App from './App';
 
+// stores
+import store from './store';
 
 Vue.use(ElementUI, {
   size: 'mini',
@@ -25,9 +27,9 @@ Vue.use(ElementUI, {
 
 Vue.config.productionTip = false;
 
-const app = new Vue({
+new Vue({ // eslint-disable-line no-new
   el: '#app',
+  store,
   components: { App },
   template: '<App/>',
 });
-app();

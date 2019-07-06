@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import MenuInfoData from '@/data/MenuInfoData';
 import WPerformance from '@/views/performance';
 
 export default {
@@ -12,8 +10,16 @@ export default {
   components: {
     WPerformance,
   },
-  computed: mapState(['selectedMenu']),
-  watch: {},
+  computed: {
+    selectedMenu() {
+      return this.$store.getters.selectedMenu;
+    },
+  },
+  watch: {
+    selectedMenu(val, oldVal) {
+      console.log(val);
+    },
+  },
 };
 </script>
 

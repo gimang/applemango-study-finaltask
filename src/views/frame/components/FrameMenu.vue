@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     ...mapState({
-      currentMenu: (state) => state.selectedMenu.menuId,
+      currentMenu: (state) => state.currentMenuId,
     }),
   },
   methods: {

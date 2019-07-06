@@ -25,14 +25,14 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-
 export default {
   name: 'WFrameHeader',
   computed: {
-    ...mapState({
-      menuLabel: (state) => state.selectedMenu.menuLabel,
-    }),
+    menuLabel() {
+      console.log(this.$store.getters.selectedMenu);
+
+      return this.$store.getters.selectedMenu.menuLabel;
+    },
   },
 };
 </script>

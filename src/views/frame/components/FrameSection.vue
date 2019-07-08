@@ -1,5 +1,9 @@
 <template>
-  <WPerformance />
+  <div>
+    <!-- <WPerformance v-if="selectedMenu.menuId === 'PERFORMANCE'" />
+    <WSettings v-else-if="selectedMenu.menuId === 'SETTINGS'" />-->
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
@@ -18,6 +22,12 @@ export default {
   watch: {
     selectedMenu(val, oldVal) {
       console.log(val);
+      this.$router.push({
+        name: 'performance',
+        params: {
+          treeKey: '1',
+        },
+      });
     },
   },
 };

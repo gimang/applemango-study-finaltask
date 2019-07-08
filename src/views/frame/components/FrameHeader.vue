@@ -29,8 +29,6 @@ export default {
   name: 'WFrameHeader',
   computed: {
     menuLabel() {
-      console.log(this.$store.getters.selectedMenu);
-
       return this.$store.getters.selectedMenu.menuLabel;
     },
   },

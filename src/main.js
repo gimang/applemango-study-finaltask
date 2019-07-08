@@ -14,11 +14,16 @@ import './styles/style.css';
 import './styles/common.css';
 import './styles/menu.css';
 
+// router
+import VueRouter from 'vue-router';
+
 // components
 import App from './App';
 
 // stores
 import store from './store';
+
+Vue.use(VueRouter);
 
 Vue.use(ElementUI, {
   size: 'mini',

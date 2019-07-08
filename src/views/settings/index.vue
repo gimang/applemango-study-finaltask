@@ -1,8 +1,6 @@
 <template>
   <!-- 설정 화면 -->
-  <div>
-    설정 화면
-  </div>
+  <div class="content">설정 화면</div>
 </template>
 
 <script>
@@ -12,5 +10,4 @@ export default {
 </script>
 
 <style>
-
 </style>

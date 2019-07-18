@@ -11,7 +11,7 @@ module.exports = {
   },
   // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
   // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-  extends: ["plugin:vue/essential", "airbnb-base",],
+  extends: ["plugin:vue/essential", "airbnb-base", "prettier"],
   // required to lint *.vue files
   plugins: ["vue"],
   // check if imports actually resolve
@@ -61,5 +61,6 @@ module.exports = {
     "max-len": ["error", { code: 300 }], //19.12 customizing
     "arrow-parens": ["error", "always"], // prettier에서 파라미터가 하나만 있는 경우  ()를 삭제하기 때문에 airbnb의 기본 룰을 명시해서 해당 룰에 맞게 formatter가 동작하도록 함.
     //  'no-unused-vars': 'error',
+    "arrow-body-style": ["error", "always"],
   }
 };

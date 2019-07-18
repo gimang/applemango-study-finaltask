@@ -2,16 +2,19 @@
   <div class="frame-container">
     <breadcrumb class="breadcrumb-container"></breadcrumb>
     <div class="main-container">
-      <common-tree></common-tree>
-      <w-view></w-view>
+      <common-tree class="tree-wrapper" ref="commonTree" :treeData="data"></common-tree>
+      <w-view :selectedNode="selectedTreeNode"></w-view>
     </div>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+import _ from 'lodash';
 import CommonTree from './CommonTree';
 import Breadcrumb from './Breadcrumb';
 import WView from './view';
+import MenuInfoData from '@/data/MenuInfoData';
 
 export default {
   name: 'WPerformance',
@@ -19,6 +22,49 @@ export default {
     CommonTree,
     WView,
     Breadcrumb,
+  },
+  created() {
+    this.loadData();
+  },
+  data() {
+    return {
+      data: [],
+    };
+  },
+  computed: {
+    selectedTreeNode() {
+      return this.$store.getters.currentTreeNode;
+    },
+  },
+  methods: {
+    loadData() {
+      axios
+        .get('/modules/common/target/tree.do', {
+          params: {
+            viewType: 'LOGICAL',
+            treeType: 'STATIC',
+            managetypeId: 'NMS',
+            managetypeKey: 'ND',
+          },
+        })
+        .then((response) => {
+          if (_.isEmpty(response.data) && !response.data.success) {
+            return;
+          }
+
+          this.data = response.data.children;
+        });
+    },
+  },
+  watch: {
+    selectedTreeNode(val) {
+      this.$router.push({
+        name: MenuInfoData.MENU_PERFORMANCE.routerName,
+        params: {
+          treekey: val.tempTreeKey,
+        },
+      });
+    },
   },
 };
 </script>

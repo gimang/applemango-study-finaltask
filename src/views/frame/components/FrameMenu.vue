@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex';
 import MenuStoreData from '@/data/MenuStoreData';
 import MenuInfoData from '@/data/MenuInfoData';
 
@@ -47,9 +46,9 @@ export default {
     };
   },
   computed: {
-    ...mapState({
-      currentMenu: (state) => state.currentMenuId,
-    }),
+    currentMenu() {
+      return this.$store.getters.currentMenuId;
+    },
   },
   methods: {
     checkMenu(menuId) {
@@ -57,9 +56,9 @@ export default {
         active: this.currentMenu === menuId,
       };
     },
-    ...mapMutations({
-      clickMenu: MenuStoreData.CHANGE_SELECTED_MENU,
-    }),
+    clickMenu(menu) {
+      this.$store.commit(MenuStoreData.CHANGE_SELECTED_MENU, menu);
+    },
   },
 };
 </script>

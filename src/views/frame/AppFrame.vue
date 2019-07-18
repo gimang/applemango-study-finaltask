@@ -34,6 +34,7 @@ export default {
 }
 
 .frame-section {
+  height: calc(100% - 50px);
   flex: 1;
 }
 </style>

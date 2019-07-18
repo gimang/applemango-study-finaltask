@@ -5,7 +5,8 @@ import WSettings from '../views/settings';
 const ROUTER = new VueRouter({
   routes: [
     { path: '/performance', name: 'performance', component: WPerformance },
-    { path: '/settings', name: 'setting', component: WSettings },
+    { path: '/performance/:treekey', name: 'performanceTreekey', component: WPerformance },
+    { path: '/settings', name: 'settings', component: WSettings },
   ],
 });
 

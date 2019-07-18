@@ -17,6 +17,9 @@ import './styles/menu.css';
 // router
 import VueRouter from 'vue-router';
 
+// highcharts
+import HighchartsVue from 'highcharts-vue';
+
 // components
 import App from './App';
 
@@ -29,6 +32,8 @@ Vue.use(ElementUI, {
   size: 'mini',
   locale,
 });
+
+Vue.use(HighchartsVue);
 
 Vue.config.productionTip = false;
 

@@ -56,8 +56,8 @@ export default {
      * @param  {?} newValue [변경된 값]
      */
     endEdit(newValue) {
-      const data = this.editing.data;
-      const property = this.editing.property;
+      const { data } = this.editing;
+      const { property } = this.editing;
 
       if (data && property) {
         // TODO: Ediotr의 keyup 이벤트로 endEdit가 호출되는 경우, keyup 이벤트에 endEdit 한번 호출,

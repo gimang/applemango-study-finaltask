@@ -1,66 +1,40 @@
 <template>
-  <div class="tree-wrapper">
-    <el-tree
-      class="el-tree"
-      :data="data"
-      :props="defaultProps"
-      node-key="tempTreeKey"
-      :default-expanded-keys="['1']"
-    ></el-tree>
-  </div>
+  <el-tree
+    class="el-tree"
+    :data="treeData"
+    :props="defaultProps"
+    node-key="tempTreeKey"
+    :default-expanded-keys="['1']"
+    @node-click="onClickNode"
+    :expand-on-click-node="false"
+  ></el-tree>
 </template>
 
 <script>
-import axios from 'axios';
 import _ from 'lodash';
+import MenuStoreData from '@/data/MenuStoreData';
 
 export default {
   name: 'CommonTree',
-  created() {
-    this.loadData();
-  },
   data() {
     return {
-      data: [
-        {
-          treeKey: '1',
-          label: 'DC',
-          children: [
-            {
-              treeKey: '1.1',
-              label: 'Group1',
-              children: [
-                { treeKey: '1.1.1', label: '관리대상1' },
-                { treeKey: '1.1.2', label: '관리대상2' },
-              ],
-            },
-          ],
-        },
-      ],
       defaultProps: {
         children: 'children',
         label: 'label',
       },
     };
   },
+  props: ['treeData'],
+  watch: {
+    treeData(val) {
+      if (!_.isEmpty(val)) {
+        this.$store.commit(MenuStoreData.CHANGE_SELECTED_TREE_NODE, val[0]);
+      }
+    },
+  },
   methods: {
-    loadData() {
-      axios
-        .get('/modules/common/target/tree.do', {
-          params: {
-            viewType: 'LOGICAL',
-            treeType: 'STATIC',
-            managetypeId: 'NMS',
-            managetypeKey: 'ND',
-          },
-        })
-        .then((response) => {
-          if (_.isEmpty(response.data) && !response.data.success) {
-            return;
-          }
-
-          this.data = response.data.children;
-        });
+    onClickNode(node) {
+      this.$store.commit(MenuStoreData.CHANGE_SELECTED_TREE_NODE, node);
     },
   },
 };

@@ -1,18 +1,16 @@
 <template>
   <div>
-    <!-- <WPerformance v-if="selectedMenu.menuId === 'PERFORMANCE'" />
-    <WSettings v-else-if="selectedMenu.menuId === 'SETTINGS'" />-->
-    <router-view></router-view>
+    <router-view class="fit-main-wrapper"></router-view>
   </div>
 </template>
 
 <script>
-import WPerformance from '@/views/performance';
+import MenuInfoData from '@/data/MenuInfoData';
 
 export default {
   name: 'WFrameSection',
-  components: {
-    WPerformance,
+  created() {
+    this.$router.push(this.getMenuRouterData(MenuInfoData.MENU_PERFORMANCE));
   },
   computed: {
     selectedMenu() {
@@ -20,14 +18,24 @@ export default {
     },
   },
   watch: {
-    selectedMenu(val, oldVal) {
-      console.log(val);
-      this.$router.push({
-        name: 'performance',
-        params: {
-          treeKey: '1',
-        },
-      });
+    selectedMenu(val) {
+      this.$router.push(this.getMenuRouterData(val));
+    },
+  },
+  methods: {
+    getMenuRouterData({ menuId, routerName }) {
+      let params = {};
+
+      if (menuId === MenuInfoData.MENU_PERFORMANCE.menuId) {
+        params = {
+          treekey: this.$store.getters.currentTreeNode.tempTreeKey,
+        };
+      }
+
+      return {
+        name: routerName,
+        params,
+      };
     },
   },
 };

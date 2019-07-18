@@ -1,6 +1,7 @@
 /* 메인 컨테이너 영역 */
 .portal-wrapper {
   height: 100%;
+  overflow-y: hidden;
 }
 
 .portal-main-wrapper {
@@ -12,7 +13,7 @@
 .main-header {
   width: 100%;
   height: 50px !important;
-    background: #fff;
+  background: #fff;
   z-index: 9;
   position: relative;
   padding: 0px;
@@ -105,20 +106,20 @@
 }
 
 .maincontent {
-    height: calc(100% - 60px);
+  height: calc(100% - 60px);
 }
 
 /* tab 패널 사용하지 않고 컨테이너로 사용할 경우 */
 .maincontent .container {
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    padding: 25px 17px;
-    border: 1px solid #dcdfe6;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 17px;
+  border: 1px solid #dcdfe6;
 }
 
 .main-tab {
-  height: 100%;
+  /* height: 100%; */
   box-shadow: none;
 }
 
@@ -151,6 +152,10 @@
   font-weight: 400;
   color: #a2a2a2;
   letter-spacing: 0;
+}
+
+.main-breadcrumb .el-breadcrumb__inner:hover {
+  color: #ea0029;
 }
 
 .sidemenu-wrap {
@@ -193,7 +198,9 @@
 .tree-wrapper .el-tree {
   padding: 0 10px 10px 10px;
   overflow-y: auto;
-  height: calc(100% - 40px); /* scroll을 사용을 위해 추가, 하단에 그룹버튼 추가 시 수정 필요 */
+  height: calc(
+    100% - 40px
+  ); /* scroll을 사용을 위해 추가, 하단에 그룹버튼 추가 시 수정 필요 */
 }
 
 .tree-wrapper .event-count {
@@ -240,7 +247,9 @@
 /* 메인 영역 ?*/
 .maincontent-wrap {
   position: relative;
-  width: calc(100% - 255px); /* width + margin */ /* moidfy by Ju: 205px -> 255px; */
+  width: calc(
+    100% - 255px
+  ); /* width + margin */ /* moidfy by Ju: 205px -> 255px; */
 }
 
 .panel-type {
@@ -322,11 +331,11 @@
   line-height: 30px;
 }
 
-.panel-header .panel-toolbar>* {
+.panel-header .panel-toolbar > * {
   margin-right: 4px;
 }
 
-.panel-header .panel-toolbar>*:last-child {
+.panel-header .panel-toolbar > *:last-child {
   margin-right: 0px;
 }
 
@@ -400,11 +409,11 @@
   justify-content: space-between;
 }
 
-.table-header.sortable div.cell>.label {
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  word-wrap:normal;
-  overflow:hidden;
+.table-header.sortable div.cell > .label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
   padding: 0px;
   line-height: 34px;
 }
@@ -422,7 +431,6 @@
 .action-column {
   cursor: pointer;
 }
-
 
 .rsc-tree {
   height: 100%;
@@ -499,7 +507,8 @@ x .comp_tit {
   color: #6c7278;
 }
 
-.comp_sty1_blue:hover {
+.comp_sty1_blue:hover,
+.comp_sty1_blue_selected {
   background-color: #f3f8ff;
   border: solid 1px #638dcc;
   border-bottom: solid 1px #638dcc;
@@ -530,7 +539,8 @@ x .comp_tit {
   color: #7a7a7a;
 }
 
-.comp_sty1_red:hover {
+.comp_sty1_red:hover,
+.comp_sty1_red_selected {
   background-color: #fffbfb;
   border: solid 1px #e296a4;
   border-bottom: solid 1px #dc8293;
@@ -609,7 +619,6 @@ x .comp_tit {
   margin-left: 4px;
 }
 
-
 /* form */
 .form-wrapper {
   border: none;
@@ -617,17 +626,17 @@ x .comp_tit {
 
 .form-wrapper .form-header {
   margin: 0 0 5px 0;
-  border-bottom: 1px solid #E8E8E8;
+  border-bottom: 1px solid #e8e8e8;
   padding-left: 10px;
   height: 30px;
   font-weight: bold;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 
 .form-wrapper .el-form {
   /* padding-bottom: 0px; */
   margin: 0 0 15px 0;
-  border-bottom: 0.5px solid #E8E8E8;
+  border-bottom: 0.5px solid #e8e8e8;
   padding: 5px 10px;
 }
 
@@ -643,11 +652,32 @@ x .comp_tit {
   margin-right: 8px;
 }
 
-
 /* Highchart */
 .highcharts-wrapper,
 .highcharts-wrapper .highcharts-container,
-.highcharts-wrapper .highcharts-container, svg {
+.highcharts-wrapper .highcharts-container,
+svg {
   height: 100% !important;
   width: 100% !important;
+}
+
+.common-panel {
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+}
+
+.main-tab .el-tabs__header {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+}
+
+.el-button--text,
+.favorite-button-unchecked {
+  color: #606266;
+}
+
+.el-button--text,
+.favorite-button-checked {
+  color: #ee3354;
 }
